@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>小林子与骚骚之间不能说的秘密</title>
+    <url>/2020/09/10/%E5%B0%8F%E6%9E%97%E4%B8%8E%E9%AA%9A%E9%AA%9A%E7%9A%84%E7%A7%98%E5%AF%86/</url>
+    <content><![CDATA[<p><strong>目录</strong></p>
+<h1 id="他们是时长两年半的练习生"><a href="#他们是时长两年半的练习生" class="headerlink" title="他们是时长两年半的练习生"></a>他们是时长两年半的练习生</h1><h2 id="好！"><a href="#好！" class="headerlink" title="好！"></a>好！</h2><h3 id="很有精神！"><a href="#很有精神！" class="headerlink" title="很有精神！"></a>很有精神！</h3><a id="more"></a>
+<hr>
+<p><strong>上传到github的文件变少了</strong><br><em>我备份了public文件夹，上传时.deploy_git会自动拷贝public文件夹并上传自gitbub</em></p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">每次发布文章需要</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1><hr>
+<h3 id="必要软件"><a href="#必要软件" class="headerlink" title="必要软件"></a>必要软件</h3><p>GIT与Node.js<br><em>安装后在输入以下指令</em>  #Git Bush输入检查版本号</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git --version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<h3 id="HEXO框架"><a href="#HEXO框架" class="headerlink" title="HEXO框架"></a>HEXO框架</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;  #taobao镜像</span><br><span class="line">npm install -g hexo-cli   #hexo安装</span><br><span class="line">hexo -v   #检查版本号</span><br><span class="line">hexo init   #初始化博客，不想麻烦可以直接在想要存放的文件夹中直接Git Bush输入指令就行</span><br><span class="line">npm install  #必要组件安装</span><br><span class="line">hexo g  #编译静态页面</span><br><span class="line">hexo s  #启用本地服务器</span><br><span class="line">git config --global user.name &quot;your github name&quot;</span><br><span class="line">git config --global user.email &quot;your github email&quot;</span><br><span class="line">git config user.name  #检查名字</span><br><span class="line">git config user.email  #检查邮件</span><br><span class="line">ssh-keygen -t rsa -C &quot;your github email&quot;  #记得要不停的敲回车直到代码写完，生成C:\Users\管理员\.ssh\id_rsa.pub，记事本打开全复制到github Deploy keys的key里，勾上下面的勾，添加</span><br><span class="line">ssh -T git@github.com  #检查秘钥是否生效</span><br><span class="line">npm install hexo-deployer-git --save  #安装部署插件</span><br><span class="line">hexo d  #部署</span><br></pre></td></tr></table></figure>
+<h3 id="GITHUB"><a href="#GITHUB" class="headerlink" title="GITHUB"></a>GITHUB</h3><ul>
+<li>注册</li>
+<li>创建仓库</li>
+<li>仓库名必须是 github用户名.github.io</li>
+<li>在code里HTTPS 转成 SSH秘钥写入博客配置站里<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo:</span><br><span class="line">    github: SSH秘钥</span><br><span class="line">    其它站:其它站秘钥</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
+<li>仓库settings</li>
+<li>deploy keys</li>
+<li>add depoly key<br>a Title随便写<br>b Key上面有说明放入啥</li>
+</ul>
+<hr>
+<p><a href="https://mp.weixin.qq.com/s/cPMf3SP8Rx6XdLqYt_DilQ">你的价值观如此脆弱</a></p>
+<p><img src="http://i0.hdslb.com/bfs/face/f7089075e84b571c9adb2f5c85e7143b766fe679.jpg_64x64.jpg" alt="亦束"></p>
+<blockquote>
+<p>必须记住的是所有符号必须英文，否则报错无法上传</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>基情</tag>
+        <tag>有爱</tag>
+        <tag>是两个狼人</tag>
+      </tags>
+  </entry>
+</search>
