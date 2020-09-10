@@ -40,4 +40,55 @@
         <tag>是两个狼人</tag>
       </tags>
   </entry>
+  <entry>
+    <title>使用Hexo的坑</title>
+    <url>/2020/09/10/%E9%83%A8%E7%BD%B2coding%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<h1 id="coding部署"><a href="#coding部署" class="headerlink" title="coding部署"></a>coding部署</h1><h2 id="coding仓库搭建"><a href="#coding仓库搭建" class="headerlink" title="coding仓库搭建"></a>coding仓库搭建</h2><pre><code>- 注册账号
+- 创建项目
+    A 代码托管项目
+    B 项目名称（用户名）
+    C 项目标识（用户名.coding.me）
+- 代码仓库
+    A 新建代码仓库
+    B 仓库名称（用户名.coding.me）
+    C Git仓库
+    D 启用README.MD文件初始化项目（其余全部默认）
+    E 代码仓库克隆SSH到站点配置里，同github一样
+    F 代码仓库设置
+    G 部署公钥（同github将.ssh里的那个pub文件记事本打开全部复制进来，标题随便，勾全勾上）
+    H 查询公钥是否成功
+    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@coding.net   #*网上说用ssh -T git@git.coding.net是错的*</span><br></pre></td></tr></table></figure>
+    I 推送
+    <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></code></pre>
+<h2 id="coding网站生成"><a href="#coding网站生成" class="headerlink" title="coding网站生成"></a>coding网站生成</h2><pre><code>- 项目设置（左下角）
+    A 功能开关
+    B 持续集成、持续部署打开
+- 个人设置（左上角）
+    A 绑定邮箱
+    B 绑定服务密码
+    C 进腾讯云账号信息填好并且实名（下方可以直接进入腾讯云，必须实名才能发布静态网站）
+- 持续部署静态网站
+    A 新建网站
+    B 静态网站（其余的该选啥选啥，类型一定是静态网站，我选择HEXO无法构建）
+    C 部署
+    D 部署成功下方就有访问地址了</code></pre>
+<hr>
+<h1 id="NEXT的坑"><a href="#NEXT的坑" class="headerlink" title="NEXT的坑"></a>NEXT的坑</h1><h2 id="动态背景没反应"><a href="#动态背景没反应" class="headerlink" title="动态背景没反应"></a>动态背景没反应</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd &#x2F;themes&#x2F;next  #*进到next文件夹*</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest  #*最新版需要下载*</span><br><span class="line">canvas_nest: true  #*需要主动在配置文件添加*</span><br></pre></td></tr></table></figure>
+<p>具体官方步骤文档<a href="https://github.com/theme-next/theme-next-canvas-nest">canvas_nest</a>,<a href="https://github.com/theme-next/theme-next-three">three</a></p>
+<h2 id="加载动画没反应"><a href="#加载动画没反应" class="headerlink" title="加载动画没反应"></a>加载动画没反应</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd &#x2F;themes&#x2F;next</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace</span><br><span class="line">pace: true  #设置为true  #*主题配置文件*</span><br><span class="line"># Themes list:</span><br><span class="line">#pace-theme-big-counter</span><br><span class="line">#pace-theme-bounce</span><br><span class="line">#pace-theme-barber-shop</span><br><span class="line">#pace-theme-center-atom</span><br><span class="line">#pace-theme-center-circle</span><br><span class="line">#pace-theme-center-radar</span><br><span class="line">#pace-theme-center-simple</span><br><span class="line">#pace-theme-corner-indicator</span><br><span class="line">#pace-theme-fill-left</span><br><span class="line">#pace-theme-flash</span><br><span class="line">#pace-theme-loading-bar</span><br><span class="line">#pace-theme-mac-osx</span><br><span class="line">#pace-theme-minimal</span><br><span class="line"># For example</span><br><span class="line"># pace_theme: pace-theme-center-simple</span><br><span class="line">pace_theme: pace-theme-center-circle #这里任选其中一种</span><br></pre></td></tr></table></figure>
+<h2 id="站内搜索没有搜索结果"><a href="#站内搜索没有搜索结果" class="headerlink" title="站内搜索没有搜索结果"></a>站内搜索没有搜索结果</h2><p>1.安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$  npm install hexo-generator-searchdb --save</span><br><span class="line">或者</span><br><span class="line">$ cnpm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<p>2.站点配置文件添加</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#表示站内搜索</span><br><span class="line">search:  </span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    limit: 10000</span><br></pre></td></tr></table></figure>
+<p>3.主题配置文件设置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true  #设置为true</span><br><span class="line">  trigger: auto  # auto &#x2F;  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  unescape: true</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>coding</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
