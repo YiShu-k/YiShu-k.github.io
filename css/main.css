@@ -192,7 +192,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'SourceHanSansSC', 'Source Han Serif', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Source Han SansSC', 'Source Han Serif', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -1197,7 +1197,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff7091;
+  background: #758753;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
