@@ -32,7 +32,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>测试</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>基情</tag>
@@ -43,7 +43,7 @@
   <entry>
     <title>使用Hexo的坑</title>
     <url>/2020/09/10/%E9%83%A8%E7%BD%B2coding%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</url>
-    <content><![CDATA[<h1 id="Coding部署"><a href="#Coding部署" class="headerlink" title="Coding部署"></a>Coding部署</h1><p><font face="思源黑体" color=red size=5><strong>Coding仓库搭建</strong></font></p>
+    <content><![CDATA[<h1 id="Coding部署"><a href="#Coding部署" class="headerlink" title="Coding部署"></a>Coding部署</h1><p><font face="思源黑体" color="red" size="5"><strong>Coding仓库搭建</strong></font></p>
 <a id="more"></a>
 <ul>
 <li>注册账号</li>
@@ -53,25 +53,25 @@
 
 </li>
 </ul>
-<p><font face="思源黑体" color=red size=5><strong>Coding网站生产</strong></font></p>
+<p><font face="思源黑体" color="red" size="5"><strong>Coding网站生产</strong></font></p>
 <ul>
 <li>项目设置（左下角）<br>  A 功能开关<br>  B 持续集成、持续部署打开</li>
 <li>个人设置（左上角）<br>  A 绑定邮箱<br>  B 绑定服务密码<br>  C 进腾讯云账号信息填好并且实名（下方可以直接进入腾讯云，必须实名才能发布静态网站）</li>
 <li>持续部署静态网站<br>  A 新建网站<br>  B 静态网站（其余的该选啥选啥，类型一定是静态网站，我选择HEXO无法构建）<br>  C 部署<br>  D 部署成功下方就有访问地址了</li>
 </ul>
 <hr>
-<h1 id="NEXT的坑"><a href="#NEXT的坑" class="headerlink" title="NEXT的坑"></a>NEXT的坑</h1><p><font face="思源黑体" color=red size=5><strong>动态背景</strong></font></p>
+<h1 id="NEXT的坑"><a href="#NEXT的坑" class="headerlink" title="NEXT的坑"></a>NEXT的坑</h1><p><font face="思源黑体" color="red" size="5"><strong>动态背景</strong></font></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd &#x2F;themes&#x2F;next  #*进到next文件夹*</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest  #*最新版需要下载*</span><br><span class="line">canvas_nest: true  #*需要主动在配置文件添加*</span><br></pre></td></tr></table></figure>
-<p>具体官方步骤文档<a href="https://github.com/theme-next/theme-next-canvas-nest">canvas_nest</a>,<a href="https://github.com/theme-next/theme-next-three">three</a><br><font face="思源黑体" color=red size=5><strong>加载动画</strong></font></p>
+<p>具体官方步骤文档<a href="https://github.com/theme-next/theme-next-canvas-nest">canvas_nest</a>,<a href="https://github.com/theme-next/theme-next-three">three</a><br><font face="思源黑体" color="red" size="5"><strong>加载动画</strong></font></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd &#x2F;themes&#x2F;next</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace</span><br><span class="line">pace: true  #设置为true  #*主题配置文件*</span><br><span class="line"># Themes list:</span><br><span class="line">#pace-theme-big-counter</span><br><span class="line">#pace-theme-bounce</span><br><span class="line">#pace-theme-barber-shop</span><br><span class="line">#pace-theme-center-atom</span><br><span class="line">#pace-theme-center-circle</span><br><span class="line">#pace-theme-center-radar</span><br><span class="line">#pace-theme-center-simple</span><br><span class="line">#pace-theme-corner-indicator</span><br><span class="line">#pace-theme-fill-left</span><br><span class="line">#pace-theme-flash</span><br><span class="line">#pace-theme-loading-bar</span><br><span class="line">#pace-theme-mac-osx</span><br><span class="line">#pace-theme-minimal</span><br><span class="line"># For example</span><br><span class="line"># pace_theme: pace-theme-center-simple</span><br><span class="line">pace_theme: pace-theme-center-circle #这里任选其中一种</span><br></pre></td></tr></table></figure>
-<p><font face="思源黑体" color=red size=5><strong>没有搜索结果</strong></font><br>1.安装插件</p>
+<p><font face="思源黑体" color="red" size="5"><strong>没有搜索结果</strong></font><br>1.安装插件</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$  npm install hexo-generator-searchdb --save</span><br><span class="line">或者</span><br><span class="line">$ cnpm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
 <p>2.站点配置文件添加</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#表示站内搜索</span><br><span class="line">search:  </span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    limit: 10000</span><br></pre></td></tr></table></figure>
 <p>3.主题配置文件设置</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true  #设置为true</span><br><span class="line">  trigger: auto  # auto &#x2F;  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  unescape: true</span><br></pre></td></tr></table></figure>
 <hr>
-<h1 id="网站变现方法之一"><a href="#网站变现方法之一" class="headerlink" title="网站变现方法之一"></a>网站变现方法之一</h1><p><font face="思源黑体" color=red size=5><strong>添加Google AdSense</strong></font><br>1.新建 AdSense 模板<br>在 next 主题下的 layout/_custom 文件夹下创建一个 <code>google_adsense.ejs</code>文件<br>然后将 <code>Google AdSense</code> 的代码复制到 <code>google_adsense.ejs</code><br>2.编辑 _layout.swig</p>
+<h1 id="网站变现方法之一"><a href="#网站变现方法之一" class="headerlink" title="网站变现方法之一"></a>网站变现方法之一</h1><p><font face="思源黑体" color="red" size="5"><strong>添加Google AdSense</strong></font><br>1.新建 AdSense 模板<br>在 next 主题下的 layout/_custom 文件夹下创建一个 <code>google_adsense.ejs</code>文件<br>然后将 <code>Google AdSense</code> 的代码复制到 <code>google_adsense.ejs</code><br>2.编辑 _layout.swig</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- Google AdSense start --&gt;</span><br><span class="line">&#123;% include &#39;_custom&#x2F;google_adsense.ejs&#39; %&#125;</span><br><span class="line">&lt;!-- Google AdSense end --&gt;</span><br></pre></td></tr></table></figure>
 <p>根据 <code>Google AdSense</code> 的要求将代码放置在 <code>&lt;head&gt;</code> 和 <code>&lt;/head&gt;</code> 标记之间</p>
 ]]></content>
@@ -81,6 +81,24 @@
       <tags>
         <tag>coding</tag>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TodayEnglish</title>
+    <url>/2020/09/11/TodayEnglish/</url>
+    <content><![CDATA[<h5 id="Today-wrod-North-South-East-West"><a href="#Today-wrod-North-South-East-West" class="headerlink" title="Today wrod: North South East West"></a>Today wrod: North South East West</h5><ul>
+<li>Which(引导疑问可询问去向) Which direction is it?</li>
+<li>Block(两位置之间的一部分) Go south for two blocks,and turn left.</li>
+</ul>
+<p>1.ABC Industries.How can I help you?<br>2.What’s your address,please?<br>3.Where’s your office,please?<br>4.How do I get to your office,please?<br>5.Where are you now?<br>6.How long does it take?<br>7.I have a meeting at your company today.<br>8.In my car,on the corner of Oack and Grant.<br>9.Drive west on Grant,and turn left on Third.</p>
+<hr>
+<h5 id="英语学习规则"><a href="#英语学习规则" class="headerlink" title="英语学习规则"></a>英语学习规则</h5><p>不带入中文思考，以句子为单位学习，直接联系英文情境，以一个句子进行发散关联其它句子进行学习。<br>听说读写，听英文想场景（不能看英文），看英文想场景（阅，不能在脑子里读出来），读英文想场景（不能看英文），想场景写句子</p>
+]]></content>
+      <categories>
+        <category>英语</category>
+      </categories>
+      <tags>
+        <tag>ToEnglish</tag>
       </tags>
   </entry>
 </search>
