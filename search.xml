@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>TodayEnglish</title>
-    <url>/2020/09/11/TodayEnglish/</url>
-    <content><![CDATA[<h5 id="Today-word-North-South-East-West"><a href="#Today-word-North-South-East-West" class="headerlink" title="Today word: North South East West"></a>Today word: North South East West</h5><ul>
-<li>Which(引导疑问可询问去向) Which direction is it?</li>
-<li>Block(两位置之间的一部分) Go south for two blocks,and turn left.<a id="more"></a>
-
-</li>
-</ul>
-<p>1.ABC Industries.How can I help you?<br>2.What’s your address,please?<br>3.Where’s your office,please?<br>4.How do I get to your office,please?<br>5.Where are you now?<br>6.How long does it take?<br>7.I have a meeting at your company today.<br>8.In my car,on the corner of Oack and Grant.<br>9.Drive west on Grant,and turn left on Third.</p>
-<hr>
-<h5 id="英语学习规则"><a href="#英语学习规则" class="headerlink" title="英语学习规则"></a>英语学习规则</h5><p>不带入中文思考，以句子为单位学习，直接联系英文情境，以一个句子进行发散关联其它句子进行学习。<br>听说读写，听英文想场景（不能看英文），看英文想场景（阅，不能在脑子里读出来），读英文想场景（不能看英文），想场景写句子</p>
-]]></content>
-      <categories>
-        <category>英语</category>
-      </categories>
-      <tags>
-        <tag>ToEnglish</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用Hexo的坑</title>
     <url>/2020/09/10/%E9%83%A8%E7%BD%B2coding%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</url>
     <content><![CDATA[<h1 id="Coding部署"><a href="#Coding部署" class="headerlink" title="Coding部署"></a>Coding部署</h1><p><font face="思源黑体" color="red" size="5"><strong>Coding仓库搭建</strong></font></p>
@@ -61,6 +41,26 @@
       <tags>
         <tag>coding</tag>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TodayEnglish</title>
+    <url>/2020/09/11/TodayEnglish/</url>
+    <content><![CDATA[<h5 id="Today-word-North-South-East-West"><a href="#Today-word-North-South-East-West" class="headerlink" title="Today word: North South East West"></a>Today word: North South East West</h5><ul>
+<li>Which(引导疑问可询问去向) Which direction is it?</li>
+<li>Block(两位置之间的一部分) Go south for two blocks,and turn left.<a id="more"></a>
+
+</li>
+</ul>
+<p>1.ABC Industries.How can I help you?<br>2.What’s your address,please?<br>3.Where’s your office,please?<br>4.How do I get to your office,please?<br>5.Where are you now?<br>6.How long does it take?<br>7.I have a meeting at your company today.<br>8.In my car,on the corner of Oack and Grant.<br>9.Drive west on Grant,and turn left on Third.</p>
+<hr>
+<h5 id="英语学习规则"><a href="#英语学习规则" class="headerlink" title="英语学习规则"></a>英语学习规则</h5><p>不带入中文思考，以句子为单位学习，直接联系英文情境，以一个句子进行发散关联其它句子进行学习。<br>听说读写，听英文想场景（不能看英文），看英文想场景（阅，不能在脑子里读出来），读英文想场景（不能看英文），想场景写句子</p>
+]]></content>
+      <categories>
+        <category>英语</category>
+      </categories>
+      <tags>
+        <tag>ToEnglish</tag>
       </tags>
   </entry>
   <entry>
