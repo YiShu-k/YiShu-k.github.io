@@ -197,6 +197,88 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://coding-pages-bucket-3473207-7944240-256-306307-1303119604.cos-website.ap-hongkong.myqcloud.com/2020/09/13/%E6%8E%A5%E5%85%A5GoogleAdsense/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="亦束">
+      <meta itemprop="description" content="一个月就能精通英语？那我下个月学也无所谓。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="亦束">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/13/%E6%8E%A5%E5%85%A5GoogleAdsense/" class="post-title-link" itemprop="url">接入GoogleAdsense</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-13 09:24:25 / 修改时间：10:12:42" itemprop="dateCreated datePublished" datetime="2020-09-13T09:24:25+08:00">2020-09-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong><em>做下记录，防止删博找不到，请到<a target="_blank" rel="noopener" href="https://www.cnblogs.com/DHUtoBUAA/p/12283738.html">原博客地址</a>查看详细文章</em></strong></p>
+<h1 id="注册-AdSense-账号"><a href="#注册-AdSense-账号" class="headerlink" title="注册 AdSense 账号"></a>注册 AdSense 账号</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.google.com/adsense/start/#">Google AdSense</a></li>
+<li>点击开始使用填写信息，国内coding给的访问地址不能使用，只能写在github地址上面</li>
+<li>写完之后会给你一段代码让你写入网站。审核通过后会自动推送广告</li>
+<li>以Next举例，复制代码到<code>themes\next\layout\_partials\head\head.swig</code>下图位置上</li>
+<li><img src="/.com//%E5%86%99%E5%85%A5%E4%BB%A3%E7%A0%81.png" alt="ex"></li>
+<li>添加完成以后就静待他们审核验收</li>
+</ul>
+<h1 id="广告单元布置"><a href="#广告单元布置" class="headerlink" title="广告单元布置"></a>广告单元布置</h1><p>AdSense提供了三种固定广告位，详情去官网查看，下面进入如何接入</p>
+<h5 id="插入评论区"><a href="#插入评论区" class="headerlink" title="插入评论区"></a>插入评论区</h5><p>将广告单元生成的广告代码插入 <code>\themes\next\layout_partials\comments.swig</code> 中的末尾即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs plain"> &#123;% elseif theme.valine.appid and theme.valine.appkey %&#125;<br>    &lt;div class&#x3D;&quot;comments&quot; id&#x3D;&quot;comments&quot;&gt;<br>    &lt;&#x2F;div&gt;<br>  &#123;% endif %&#125;<br><br>&lt;!-- Insert google ad blocks --&gt;<br>&lt;script async src&#x3D;&quot;https:&#x2F;&#x2F;pagead2.googlesyndication.com&#x2F;pagead&#x2F;js&#x2F;adsbygoogle.js&quot;&gt;&lt;&#x2F;script&gt;<br>&lt;!-- Comment_Below --&gt;<br>&lt;ins class&#x3D;&quot;adsbygoogle&quot;<br>     style&#x3D;&quot;display:block&quot;<br>     data-ad-client&#x3D;&quot;ca-pub-61***56&quot;<br>     data-ad-slot&#x3D;&quot;83***73&quot;<br>     data-ad-format&#x3D;&quot;auto&quot;<br>     data-full-width-responsive&#x3D;&quot;true&quot;&gt;&lt;&#x2F;ins&gt;<br>&lt;script&gt;<br>     (adsbygoogle &#x3D; window.adsbygoogle || []).push(&#123;&#125;);<br>&lt;&#x2F;script&gt;<br><br>&#123;% endif %&#125;<br></code></pre></td></tr></table></figure>
+<h5 id="插入侧边栏"><a href="#插入侧边栏" class="headerlink" title="插入侧边栏"></a>插入侧边栏</h5><p>将代码插入<code>\themes\next\layout\_macro\sidebar.swig</code> 文件中的最下侧。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs plain">      &#123;% if theme.sidebar.b2t %&#125;<br>        &lt;div class&#x3D;&quot;back-to-top&quot;&gt;<br>          &lt;i class&#x3D;&quot;fa fa-arrow-up&quot;&gt;&lt;&#x2F;i&gt;<br>          &#123;% if theme.sidebar.scrollpercent %&#125;<br>            &lt;span id&#x3D;&quot;scrollpercent&quot;&gt;&lt;span&gt;0&lt;&#x2F;span&gt;%&lt;&#x2F;span&gt;<br>          &#123;% endif %&#125;<br>        &lt;&#x2F;div&gt;<br>      &#123;% endif %&#125;<br><br>&lt;!-- Insert google ad blocks --&gt;<br>&lt;script async src&#x3D;&quot;https:&#x2F;&#x2F;pagead2.googlesyndication.com&#x2F;pagead&#x2F;js&#x2F;adsbygoogle.js&quot;&gt;&lt;&#x2F;script&gt;<br>&lt;!-- Comment_Below --&gt;<br>&lt;ins class&#x3D;&quot;adsbygoogle&quot;<br>     style&#x3D;&quot;display:block&quot;<br>     data-ad-client&#x3D;&quot;ca-pub-6129496365361356&quot;<br>     data-ad-slot&#x3D;&quot;8323610673&quot;<br>     data-ad-format&#x3D;&quot;auto&quot;<br>     data-full-width-responsive&#x3D;&quot;true&quot;&gt;&lt;&#x2F;ins&gt;<br>&lt;script&gt;<br>     (adsbygoogle &#x3D; window.adsbygoogle || []).push(&#123;&#125;);<br>&lt;&#x2F;script&gt;<br><br>    &lt;&#x2F;div&gt;<br>  &lt;&#x2F;aside&gt;<br>&#123;% endmacro %&#125;<br></code></pre></td></tr></table></figure>
+<h5 id="插入文章头部"><a href="#插入文章头部" class="headerlink" title="插入文章头部"></a>插入文章头部</h5><p>在<code>\themes\next\layout\_custom\</code> 目录下，新建 google_adsense.swig，并将 AdSense 提供的广告代码放入其中，然后将<br> <code>&#123;% include '../_custom/google_adsense.swig' %&#125;</code><br> 插入到 <code>\themes\next\layout\_macro\post.swig</code> 文件中。<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs plain">     &#123;% else %&#125;<br>          &#123;% if post.type &#x3D;&#x3D;&#x3D; &#39;picture&#39; %&#125;<br>            &lt;a href&#x3D;&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot;&gt;&#123;&#123; post.content &#125;&#125;&lt;&#x2F;a&gt;<br>          &#123;% else %&#125;<br>            &#123;&#123; post.content &#125;&#125;<br>          &#123;% endif %&#125;<br>        &#123;% endif %&#125;<br>      &#123;% else %&#125;<br>&lt;!-- Insert google ad blocks --&gt;<br>        &#123;% include &#39;..&#x2F;_custom&#x2F;google_adsense.swig&#39; %&#125;<br><br>        &#123;&#123; post.content &#125;&#125;<br>      &#123;% endif  %&#125;<br>    &lt;&#x2F;div&gt;<br>    &#123;#####################&#125;<br>    &#123;### END POST BODY ###&#125;<br>    &#123;#####################&#125;<br></code></pre></td></tr></table></figure><br>不建议在一个网页中布置多个广告，广告内容雷同，会严重影响用户阅读体验。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://coding-pages-bucket-3473207-7944240-256-306307-1303119604.cos-website.ap-hongkong.myqcloud.com/2020/09/11/TodayEnglish/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -380,7 +462,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-11 18:21:36" itemprop="dateModified" datetime="2020-09-11T18:21:36+08:00">2020-09-11</time>
+                <time title="修改时间：2020-09-13 09:28:46" itemprop="dateModified" datetime="2020-09-13T09:28:46+08:00">2020-09-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -495,7 +577,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -508,7 +590,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

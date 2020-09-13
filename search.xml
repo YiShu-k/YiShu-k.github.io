@@ -28,18 +28,18 @@
 <hr>
 <p><strong>上传到github的文件变少了</strong><br><em>我备份了public文件夹，上传时.deploy_git会自动拷贝public文件夹并上传自gitbub</em></p>
 <hr>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">每次发布文章需要</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">每次发布文章需要<br>hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
 
 <hr>
 <h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1><hr>
 <h3 id="必要软件"><a href="#必要软件" class="headerlink" title="必要软件"></a>必要软件</h3><p>GIT与Node.js<br><em>安装后在输入以下指令</em>  #Git Bush输入检查版本号</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git --version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<h3 id="HEXO框架"><a href="#HEXO框架" class="headerlink" title="HEXO框架"></a>HEXO框架</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;  #taobao镜像</span><br><span class="line">npm install -g hexo-cli   #hexo安装</span><br><span class="line">hexo -v   #检查版本号</span><br><span class="line">hexo init   #初始化博客，不想麻烦可以直接在想要存放的文件夹中直接Git Bush输入指令就行</span><br><span class="line">npm install  #必要组件安装</span><br><span class="line">hexo g  #编译静态页面</span><br><span class="line">hexo s  #启用本地服务器</span><br><span class="line">git config --global user.name &quot;your github name&quot;</span><br><span class="line">git config --global user.email &quot;your github email&quot;</span><br><span class="line">git config user.name  #检查名字</span><br><span class="line">git config user.email  #检查邮件</span><br><span class="line">ssh-keygen -t rsa -C &quot;your github email&quot;  #记得要不停的敲回车直到代码写完，生成C:\Users\管理员\.ssh\id_rsa.pub，记事本打开全复制到github Deploy keys的key里，勾上下面的勾，添加</span><br><span class="line">ssh -T git@github.com  #检查秘钥是否生效</span><br><span class="line">npm install hexo-deployer-git --save  #安装部署插件</span><br><span class="line">hexo d  #部署</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">git --version<br>node -v<br>npm -v<br></code></pre></td></tr></table></figure>
+<h3 id="HEXO框架"><a href="#HEXO框架" class="headerlink" title="HEXO框架"></a>HEXO框架</h3><figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;  #taobao镜像<br>npm install -g hexo-cli   #hexo安装<br>hexo -v   #检查版本号<br>hexo init   #初始化博客，不想麻烦可以直接在想要存放的文件夹中直接Git Bush输入指令就行<br>npm install  #必要组件安装<br>hexo g  #编译静态页面<br>hexo s  #启用本地服务器<br>git config --global user.name &quot;your github name&quot;<br>git config --global user.email &quot;your github email&quot;<br>git config user.name  #检查名字<br>git config user.email  #检查邮件<br>ssh-keygen -t rsa -C &quot;your github email&quot;  #记得要不停的敲回车直到代码写完，生成C:\Users\管理员\.ssh\id_rsa.pub，记事本打开全复制到github Deploy keys的key里，勾上下面的勾，添加<br>ssh -T git@github.com  #检查秘钥是否生效<br>npm install hexo-deployer-git --save  #安装部署插件<br>hexo d  #部署<br></code></pre></td></tr></table></figure>
 <h3 id="GITHUB"><a href="#GITHUB" class="headerlink" title="GITHUB"></a>GITHUB</h3><ul>
 <li>注册</li>
 <li>创建仓库</li>
 <li>仓库名必须是 github用户名.github.io</li>
-<li>在code里HTTPS 转成 SSH秘钥写入博客配置站里<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo:</span><br><span class="line">    github: SSH秘钥</span><br><span class="line">    其它站:其它站秘钥</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
+<li>在code里HTTPS 转成 SSH秘钥写入博客配置站里<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">deploy:<br>  type: git<br>  repo:<br>    github: SSH秘钥<br>    其它站:其它站秘钥<br>  branch: master<br></code></pre></td></tr></table></figure></li>
 <li>仓库settings</li>
 <li>deploy keys</li>
 <li>add depoly key<br>a Title随便写<br>b Key上面有说明放入啥</li>
@@ -56,8 +56,32 @@
       </categories>
       <tags>
         <tag>基情</tag>
-        <tag>有爱</tag>
-        <tag>是两个狼人</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>接入GoogleAdsense</title>
+    <url>/2020/09/13/%E6%8E%A5%E5%85%A5GoogleAdsense/</url>
+    <content><![CDATA[<p><strong><em>做下记录，防止删博找不到，请到<a href="https://www.cnblogs.com/DHUtoBUAA/p/12283738.html">原博客地址</a>查看详细文章</em></strong></p>
+<h1 id="注册-AdSense-账号"><a href="#注册-AdSense-账号" class="headerlink" title="注册 AdSense 账号"></a>注册 AdSense 账号</h1><ul>
+<li><a href="https://www.google.com/adsense/start/#">Google AdSense</a></li>
+<li>点击开始使用填写信息，国内coding给的访问地址不能使用，只能写在github地址上面</li>
+<li>写完之后会给你一段代码让你写入网站。审核通过后会自动推送广告</li>
+<li>以Next举例，复制代码到<code>themes\next\layout\_partials\head\head.swig</code>下图位置上</li>
+<li><img src="/.com//%E5%86%99%E5%85%A5%E4%BB%A3%E7%A0%81.png" alt="ex"></li>
+<li>添加完成以后就静待他们审核验收</li>
+</ul>
+<h1 id="广告单元布置"><a href="#广告单元布置" class="headerlink" title="广告单元布置"></a>广告单元布置</h1><p>AdSense提供了三种固定广告位，详情去官网查看，下面进入如何接入</p>
+<h5 id="插入评论区"><a href="#插入评论区" class="headerlink" title="插入评论区"></a>插入评论区</h5><p>将广告单元生成的广告代码插入 <code>\themes\next\layout_partials\comments.swig</code> 中的末尾即可。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain"> &#123;% elseif theme.valine.appid and theme.valine.appkey %&#125;<br>    &lt;div class&#x3D;&quot;comments&quot; id&#x3D;&quot;comments&quot;&gt;<br>    &lt;&#x2F;div&gt;<br>  &#123;% endif %&#125;<br><br>&lt;!-- Insert google ad blocks --&gt;<br>&lt;script async src&#x3D;&quot;https:&#x2F;&#x2F;pagead2.googlesyndication.com&#x2F;pagead&#x2F;js&#x2F;adsbygoogle.js&quot;&gt;&lt;&#x2F;script&gt;<br>&lt;!-- Comment_Below --&gt;<br>&lt;ins class&#x3D;&quot;adsbygoogle&quot;<br>     style&#x3D;&quot;display:block&quot;<br>     data-ad-client&#x3D;&quot;ca-pub-61***56&quot;<br>     data-ad-slot&#x3D;&quot;83***73&quot;<br>     data-ad-format&#x3D;&quot;auto&quot;<br>     data-full-width-responsive&#x3D;&quot;true&quot;&gt;&lt;&#x2F;ins&gt;<br>&lt;script&gt;<br>     (adsbygoogle &#x3D; window.adsbygoogle || []).push(&#123;&#125;);<br>&lt;&#x2F;script&gt;<br><br>&#123;% endif %&#125;<br></code></pre></td></tr></table></figure>
+<h5 id="插入侧边栏"><a href="#插入侧边栏" class="headerlink" title="插入侧边栏"></a>插入侧边栏</h5><p>将代码插入<code>\themes\next\layout\_macro\sidebar.swig</code> 文件中的最下侧。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">      &#123;% if theme.sidebar.b2t %&#125;<br>        &lt;div class&#x3D;&quot;back-to-top&quot;&gt;<br>          &lt;i class&#x3D;&quot;fa fa-arrow-up&quot;&gt;&lt;&#x2F;i&gt;<br>          &#123;% if theme.sidebar.scrollpercent %&#125;<br>            &lt;span id&#x3D;&quot;scrollpercent&quot;&gt;&lt;span&gt;0&lt;&#x2F;span&gt;%&lt;&#x2F;span&gt;<br>          &#123;% endif %&#125;<br>        &lt;&#x2F;div&gt;<br>      &#123;% endif %&#125;<br><br>&lt;!-- Insert google ad blocks --&gt;<br>&lt;script async src&#x3D;&quot;https:&#x2F;&#x2F;pagead2.googlesyndication.com&#x2F;pagead&#x2F;js&#x2F;adsbygoogle.js&quot;&gt;&lt;&#x2F;script&gt;<br>&lt;!-- Comment_Below --&gt;<br>&lt;ins class&#x3D;&quot;adsbygoogle&quot;<br>     style&#x3D;&quot;display:block&quot;<br>     data-ad-client&#x3D;&quot;ca-pub-6129496365361356&quot;<br>     data-ad-slot&#x3D;&quot;8323610673&quot;<br>     data-ad-format&#x3D;&quot;auto&quot;<br>     data-full-width-responsive&#x3D;&quot;true&quot;&gt;&lt;&#x2F;ins&gt;<br>&lt;script&gt;<br>     (adsbygoogle &#x3D; window.adsbygoogle || []).push(&#123;&#125;);<br>&lt;&#x2F;script&gt;<br><br>    &lt;&#x2F;div&gt;<br>  &lt;&#x2F;aside&gt;<br>&#123;% endmacro %&#125;<br></code></pre></td></tr></table></figure>
+<h5 id="插入文章头部"><a href="#插入文章头部" class="headerlink" title="插入文章头部"></a>插入文章头部</h5><p>在<code>\themes\next\layout\_custom\</code> 目录下，新建 google_adsense.swig，并将 AdSense 提供的广告代码放入其中，然后将<br> <code>&#123;% include '../_custom/google_adsense.swig' %&#125;</code><br> 插入到 <code>\themes\next\layout\_macro\post.swig</code> 文件中。<br> <figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">     &#123;% else %&#125;<br>          &#123;% if post.type &#x3D;&#x3D;&#x3D; &#39;picture&#39; %&#125;<br>            &lt;a href&#x3D;&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot;&gt;&#123;&#123; post.content &#125;&#125;&lt;&#x2F;a&gt;<br>          &#123;% else %&#125;<br>            &#123;&#123; post.content &#125;&#125;<br>          &#123;% endif %&#125;<br>        &#123;% endif %&#125;<br>      &#123;% else %&#125;<br>&lt;!-- Insert google ad blocks --&gt;<br>        &#123;% include &#39;..&#x2F;_custom&#x2F;google_adsense.swig&#39; %&#125;<br><br>        &#123;&#123; post.content &#125;&#125;<br>      &#123;% endif  %&#125;<br>    &lt;&#x2F;div&gt;<br>    &#123;#####################&#125;<br>    &#123;### END POST BODY ###&#125;<br>    &#123;#####################&#125;<br></code></pre></td></tr></table></figure><br>不建议在一个网页中布置多个广告，广告内容雷同，会严重影响用户阅读体验。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -68,8 +92,8 @@
 <ul>
 <li>注册账号</li>
 <li>创建项目<br>  A 代码托管项目<br>  B 项目名称（用户名）<br>  C 项目标识（用户名.coding.me）</li>
-<li>代码仓库<br>  A 新建代码仓库<br>  B 仓库名称（用户名.coding.me）<br>  C Git仓库<br>  D 启用README.MD文件初始化项目（其余全部默认）<br>  E 代码仓库克隆SSH到站点配置里，同github一样<br>  F 代码仓库设置<br>  G 部署公钥（同github将.ssh里的那个pub文件记事本打开全部复制进来，标题随便，勾全勾上）<br>  H 查询公钥是否成功<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@coding.net   #*网上说用ssh -T git@git.coding.net是错的*</span><br></pre></td></tr></table></figure>
-  I 推送<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<li>代码仓库<br>  A 新建代码仓库<br>  B 仓库名称（用户名.coding.me）<br>  C Git仓库<br>  D 启用README.MD文件初始化项目（其余全部默认）<br>  E 代码仓库克隆SSH到站点配置里，同github一样<br>  F 代码仓库设置<br>  G 部署公钥（同github将.ssh里的那个pub文件记事本打开全部复制进来，标题随便，勾全勾上）<br>  H 查询公钥是否成功<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">ssh -T git@coding.net   #*网上说用ssh -T git@git.coding.net是错的*<br></code></pre></td></tr></table></figure>
+  I 推送<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -81,18 +105,18 @@
 </ul>
 <hr>
 <h1 id="NEXT的坑"><a href="#NEXT的坑" class="headerlink" title="NEXT的坑"></a>NEXT的坑</h1><p><font face="思源黑体" color="red" size="5"><strong>动态背景</strong></font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd &#x2F;themes&#x2F;next  #*进到next文件夹*</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest  #*最新版需要下载*</span><br><span class="line">canvas_nest: true  #*需要主动在配置文件添加*</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">$ cd &#x2F;themes&#x2F;next  #*进到next文件夹*<br>$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest  #*最新版需要下载*<br>canvas_nest: true  #*需要主动在配置文件添加*<br></code></pre></td></tr></table></figure>
 <p>具体官方步骤文档<a href="https://github.com/theme-next/theme-next-canvas-nest">canvas_nest</a>,<a href="https://github.com/theme-next/theme-next-three">three</a><br><font face="思源黑体" color="red" size="5"><strong>加载动画</strong></font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd &#x2F;themes&#x2F;next</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace</span><br><span class="line">pace: true  #设置为true  #*主题配置文件*</span><br><span class="line"># Themes list:</span><br><span class="line">#pace-theme-big-counter</span><br><span class="line">#pace-theme-bounce</span><br><span class="line">#pace-theme-barber-shop</span><br><span class="line">#pace-theme-center-atom</span><br><span class="line">#pace-theme-center-circle</span><br><span class="line">#pace-theme-center-radar</span><br><span class="line">#pace-theme-center-simple</span><br><span class="line">#pace-theme-corner-indicator</span><br><span class="line">#pace-theme-fill-left</span><br><span class="line">#pace-theme-flash</span><br><span class="line">#pace-theme-loading-bar</span><br><span class="line">#pace-theme-mac-osx</span><br><span class="line">#pace-theme-minimal</span><br><span class="line"># For example</span><br><span class="line"># pace_theme: pace-theme-center-simple</span><br><span class="line">pace_theme: pace-theme-center-circle #这里任选其中一种</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">$ cd &#x2F;themes&#x2F;next<br>$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace<br>pace: true  #设置为true  #*主题配置文件*<br># Themes list:<br>#pace-theme-big-counter<br>#pace-theme-bounce<br>#pace-theme-barber-shop<br>#pace-theme-center-atom<br>#pace-theme-center-circle<br>#pace-theme-center-radar<br>#pace-theme-center-simple<br>#pace-theme-corner-indicator<br>#pace-theme-fill-left<br>#pace-theme-flash<br>#pace-theme-loading-bar<br>#pace-theme-mac-osx<br>#pace-theme-minimal<br># For example<br># pace_theme: pace-theme-center-simple<br>pace_theme: pace-theme-center-circle #这里任选其中一种<br></code></pre></td></tr></table></figure>
 <p><font face="思源黑体" color="red" size="5"><strong>没有搜索结果</strong></font><br>1.安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$  npm install hexo-generator-searchdb --save</span><br><span class="line">或者</span><br><span class="line">$ cnpm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">$  npm install hexo-generator-searchdb --save<br>或者<br>$ cnpm install hexo-generator-searchdb --save<br></code></pre></td></tr></table></figure>
 <p>2.站点配置文件添加</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#表示站内搜索</span><br><span class="line">search:  </span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    limit: 10000</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">#表示站内搜索<br>search:  <br>    path: search.xml<br>    field: post<br>    format: html<br>    limit: 10000<br></code></pre></td></tr></table></figure>
 <p>3.主题配置文件设置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true  #设置为true</span><br><span class="line">  trigger: auto  # auto &#x2F;  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  unescape: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">local_search:<br>  enable: true  #设置为true<br>  trigger: auto  # auto &#x2F;  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索<br>  top_n_per_article: 1<br>  unescape: true<br></code></pre></td></tr></table></figure>
 <hr>
 <h1 id="网站变现方法之一"><a href="#网站变现方法之一" class="headerlink" title="网站变现方法之一"></a>网站变现方法之一</h1><p><font face="思源黑体" color="red" size="5"><strong>添加Google AdSense</strong></font><br>1.新建 AdSense 模板<br>在 next 主题下的 layout/_custom 文件夹下创建一个 <code>google_adsense.ejs</code>文件<br>然后将 <code>Google AdSense</code> 的代码复制到 <code>google_adsense.ejs</code><br>2.编辑 _layout.swig</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- Google AdSense start --&gt;</span><br><span class="line">&#123;% include &#39;_custom&#x2F;google_adsense.ejs&#39; %&#125;</span><br><span class="line">&lt;!-- Google AdSense end --&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs plain">&lt;!-- Google AdSense start --&gt;<br>&#123;% include &#39;_custom&#x2F;google_adsense.ejs&#39; %&#125;<br>&lt;!-- Google AdSense end --&gt;<br></code></pre></td></tr></table></figure>
 <p>根据 <code>Google AdSense</code> 的要求将代码放置在 <code>&lt;head&gt;</code> 和 <code>&lt;/head&gt;</code> 标记之间</p>
 ]]></content>
       <categories>

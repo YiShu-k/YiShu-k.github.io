@@ -34,11 +34,9 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://i0.hdslb.com/bfs/face/f7089075e84b571c9adb2f5c85e7143b766fe679.jpg_64x64.jpg">
 <meta property="article:published_time" content="2020-09-10T00:14:10.740Z">
-<meta property="article:modified_time" content="2020-09-11T10:21:36.415Z">
+<meta property="article:modified_time" content="2020-09-13T01:28:46.518Z">
 <meta property="article:author" content="亦束">
 <meta property="article:tag" content="基情">
-<meta property="article:tag" content="有爱">
-<meta property="article:tag" content="是两个狼人">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://i0.hdslb.com/bfs/face/f7089075e84b571c9adb2f5c85e7143b766fe679.jpg_64x64.jpg">
 
@@ -235,7 +233,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-11 18:21:36" itemprop="dateModified" datetime="2020-09-11T18:21:36+08:00">2020-09-11</time>
+                <time title="修改时间：2020-09-13 09:28:46" itemprop="dateModified" datetime="2020-09-13T09:28:46+08:00">2020-09-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -270,18 +268,18 @@
 <hr>
 <p><strong>上传到github的文件变少了</strong><br><em>我备份了public文件夹，上传时.deploy_git会自动拷贝public文件夹并上传自gitbub</em></p>
 <hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">每次发布文章需要</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plain">每次发布文章需要<br>hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
 
 <hr>
 <h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1><hr>
 <h3 id="必要软件"><a href="#必要软件" class="headerlink" title="必要软件"></a>必要软件</h3><p>GIT与Node.js<br><em>安装后在输入以下指令</em>  #Git Bush输入检查版本号</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<h3 id="HEXO框架"><a href="#HEXO框架" class="headerlink" title="HEXO框架"></a>HEXO框架</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;  #taobao镜像</span><br><span class="line">npm install -g hexo-cli   #hexo安装</span><br><span class="line">hexo -v   #检查版本号</span><br><span class="line">hexo init   #初始化博客，不想麻烦可以直接在想要存放的文件夹中直接Git Bush输入指令就行</span><br><span class="line">npm install  #必要组件安装</span><br><span class="line">hexo g  #编译静态页面</span><br><span class="line">hexo s  #启用本地服务器</span><br><span class="line">git config --global user.name &quot;your github name&quot;</span><br><span class="line">git config --global user.email &quot;your github email&quot;</span><br><span class="line">git config user.name  #检查名字</span><br><span class="line">git config user.email  #检查邮件</span><br><span class="line">ssh-keygen -t rsa -C &quot;your github email&quot;  #记得要不停的敲回车直到代码写完，生成C:\Users\管理员\.ssh\id_rsa.pub，记事本打开全复制到github Deploy keys的key里，勾上下面的勾，添加</span><br><span class="line">ssh -T git@github.com  #检查秘钥是否生效</span><br><span class="line">npm install hexo-deployer-git --save  #安装部署插件</span><br><span class="line">hexo d  #部署</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">git --version<br>node -v<br>npm -v<br></code></pre></td></tr></table></figure>
+<h3 id="HEXO框架"><a href="#HEXO框架" class="headerlink" title="HEXO框架"></a>HEXO框架</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs plain">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;  #taobao镜像<br>npm install -g hexo-cli   #hexo安装<br>hexo -v   #检查版本号<br>hexo init   #初始化博客，不想麻烦可以直接在想要存放的文件夹中直接Git Bush输入指令就行<br>npm install  #必要组件安装<br>hexo g  #编译静态页面<br>hexo s  #启用本地服务器<br>git config --global user.name &quot;your github name&quot;<br>git config --global user.email &quot;your github email&quot;<br>git config user.name  #检查名字<br>git config user.email  #检查邮件<br>ssh-keygen -t rsa -C &quot;your github email&quot;  #记得要不停的敲回车直到代码写完，生成C:\Users\管理员\.ssh\id_rsa.pub，记事本打开全复制到github Deploy keys的key里，勾上下面的勾，添加<br>ssh -T git@github.com  #检查秘钥是否生效<br>npm install hexo-deployer-git --save  #安装部署插件<br>hexo d  #部署<br></code></pre></td></tr></table></figure>
 <h3 id="GITHUB"><a href="#GITHUB" class="headerlink" title="GITHUB"></a>GITHUB</h3><ul>
 <li>注册</li>
 <li>创建仓库</li>
 <li>仓库名必须是 github用户名.github.io</li>
-<li>在code里HTTPS 转成 SSH秘钥写入博客配置站里<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo:</span><br><span class="line">    github: SSH秘钥</span><br><span class="line">    其它站:其它站秘钥</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
+<li>在code里HTTPS 转成 SSH秘钥写入博客配置站里<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plain">deploy:<br>  type: git<br>  repo:<br>    github: SSH秘钥<br>    其它站:其它站秘钥<br>  branch: master<br></code></pre></td></tr></table></figure></li>
 <li>仓库settings</li>
 <li>deploy keys</li>
 <li>add depoly key<br>a Title随便写<br>b Key上面有说明放入啥</li>
@@ -363,8 +361,6 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E5%9F%BA%E6%83%85/" rel="tag">YS 基情</a>
-              <a href="/tags/%E6%9C%89%E7%88%B1/" rel="tag">YS 有爱</a>
-              <a href="/tags/%E6%98%AF%E4%B8%A4%E4%B8%AA%E7%8B%BC%E4%BA%BA/" rel="tag">YS 是两个狼人</a>
           </div>
 
         
@@ -456,7 +452,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -469,7 +465,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
