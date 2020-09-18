@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source Han Serif:300,300italic,400,400italic,700,700italic|Source Han SansSC:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source Han Serif:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-big-counter.min.css">
   <script src="/lib/pace/pace.min.js"></script>
@@ -142,11 +142,6 @@
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
-        <li class="menu-item menu-item-schedule">
-
-    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>日程表</a>
-
-  </li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -267,8 +262,8 @@
 <ul>
 <li>注册账号</li>
 <li>创建项目<br>  A 代码托管项目<br>  B 项目名称（用户名）<br>  C 项目标识（用户名.coding.me）</li>
-<li>代码仓库<br>  A 新建代码仓库<br>  B 仓库名称（用户名.coding.me）<br>  C Git仓库<br>  D 启用README.MD文件初始化项目（其余全部默认）<br>  E 代码仓库克隆SSH到站点配置里，同github一样<br>  F 代码仓库设置<br>  G 部署公钥（同github将.ssh里的那个pub文件记事本打开全部复制进来，标题随便，勾全勾上）<br>  H 查询公钥是否成功<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">ssh -T git@coding.net   #*网上说用ssh -T git@git.coding.net是错的*<br></code></pre></td></tr></table></figure>
-  I 推送<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
+<li>代码仓库<br>  A 新建代码仓库<br>  B 仓库名称（用户名.coding.me）<br>  C Git仓库<br>  D 启用README.MD文件初始化项目（其余全部默认）<br>  E 代码仓库克隆SSH到站点配置里，同github一样<br>  F 代码仓库设置<br>  G 部署公钥（同github将.ssh里的那个pub文件记事本打开全部复制进来，标题随便，勾全勾上）<br>  H 查询公钥是否成功<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">ssh -T git@coding.net   #*网上说用ssh -T git@git.coding.net是错的*<br></code></pre></td></tr></table></figure>
+  I 推送<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -280,15 +275,15 @@
 </ul>
 <hr>
 <h1 id="NEXT的坑"><a href="#NEXT的坑" class="headerlink" title="NEXT的坑"></a>NEXT的坑</h1><p><font face="思源黑体" color="red" size="5"><strong>动态背景</strong></font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">$ cd &#x2F;themes&#x2F;next  #*进到next文件夹*<br>$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest  #*最新版需要下载*<br>canvas_nest: true  #*需要主动在配置文件添加*<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">$ cd &#x2F;themes&#x2F;next  #*进到next文件夹*<br>$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest  #*最新版需要下载*<br>canvas_nest: true  #*需要主动在配置文件添加*<br></code></pre></td></tr></table></figure>
 <p>具体官方步骤文档<a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-canvas-nest">canvas_nest</a>,<a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-three">three</a><br><font face="思源黑体" color="red" size="5"><strong>加载动画</strong></font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs plain">$ cd &#x2F;themes&#x2F;next<br>$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace<br>pace: true  #设置为true  #*主题配置文件*<br># Themes list:<br>#pace-theme-big-counter<br>#pace-theme-bounce<br>#pace-theme-barber-shop<br>#pace-theme-center-atom<br>#pace-theme-center-circle<br>#pace-theme-center-radar<br>#pace-theme-center-simple<br>#pace-theme-corner-indicator<br>#pace-theme-fill-left<br>#pace-theme-flash<br>#pace-theme-loading-bar<br>#pace-theme-mac-osx<br>#pace-theme-minimal<br># For example<br># pace_theme: pace-theme-center-simple<br>pace_theme: pace-theme-center-circle #这里任选其中一种<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">$ cd &#x2F;themes&#x2F;next<br>$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace<br>pace: true  #设置为true  #*主题配置文件*<br># Themes list:<br>#pace-theme-big-counter<br>#pace-theme-bounce<br>#pace-theme-barber-shop<br>#pace-theme-center-atom<br>#pace-theme-center-circle<br>#pace-theme-center-radar<br>#pace-theme-center-simple<br>#pace-theme-corner-indicator<br>#pace-theme-fill-left<br>#pace-theme-flash<br>#pace-theme-loading-bar<br>#pace-theme-mac-osx<br>#pace-theme-minimal<br># For example<br># pace_theme: pace-theme-center-simple<br>pace_theme: pace-theme-center-circle #这里任选其中一种<br></code></pre></td></tr></table></figure>
 <p><font face="思源黑体" color="red" size="5"><strong>没有搜索结果</strong></font><br>1.安装插件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">$  npm install hexo-generator-searchdb --save<br>或者<br>$ cnpm install hexo-generator-searchdb --save<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">$  npm install hexo-generator-searchdb --save<br>或者<br>$ cnpm install hexo-generator-searchdb --save<br></code></pre></td></tr></table></figure>
 <p>2.站点配置文件添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plain">#表示站内搜索<br>search:  <br>    path: search.xml<br>    field: post<br>    format: html<br>    limit: 10000<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">#表示站内搜索<br>search:  <br>    path: search.xml<br>    field: post<br>    format: html<br>    limit: 10000<br></code></pre></td></tr></table></figure>
 <p>3.主题配置文件设置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plain">local_search:<br>  enable: true  #设置为true<br>  trigger: auto  # auto &#x2F;  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索<br>  top_n_per_article: 1<br>  unescape: true<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">local_search:<br>  enable: true  #设置为true<br>  trigger: auto  # auto &#x2F;  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索<br>  top_n_per_article: 1<br>  unescape: true<br></code></pre></td></tr></table></figure>
 <hr>
 <h1 id="HEXO文章添加本地图片"><a href="#HEXO文章添加本地图片" class="headerlink" title="HEXO文章添加本地图片"></a>HEXO文章添加本地图片</h1><ul>
 <li>修改主页配置文件_config.yml中的post_asset_folder这个选项的值为true</li>
@@ -395,11 +390,6 @@
 
           </div>
           
-    
-  <div class="comments">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC81MTUwMi8yNzk4Mw=="></div>
-  </div>
-  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -462,29 +452,24 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://space.bilibili.com/17617970" title="bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;17617970" rel="noopener" target="_blank"><i class="fa fa-fw fa-bilibili"></i>bilibili</a>
-      </span>
-  </div>
   <div class="cc-license motion-element" itemprop="license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
@@ -493,11 +478,14 @@
   <div class="links-of-blogroll motion-element">
     <div class="links-of-blogroll-title">
       <i class="fa fa-fw fa-link"></i>
-      Links
+      友链
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
           <a href="https://xydh.fun/YiShu" title="https:&#x2F;&#x2F;xydh.fun&#x2F;YiShu" rel="noopener" target="_blank">亦束导航</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://space.bilibili.com/17617970%20%20||%20bilibili" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;17617970  || bilibili" rel="noopener" target="_blank">B站亦束</a>
         </li>
     </ul>
   </div>
@@ -525,7 +513,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">©2018 by 亦束</span>
+  <span class="author" itemprop="copyrightHolder">©2020 by 亦束</span>
 </div>
 
 <!---->
@@ -610,21 +598,5 @@
 
   
 
-<script>
-NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
-  window.livereOptions = {
-    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
-});
-</script>
-
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
