@@ -25,6 +25,7 @@
     var CONFIG = {"hostname":"coding-pages-bucket-3473207-7944240-256-306307-1303119604.cos-website.ap-hongkong.myqcloud.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
+
   <meta name="description" content="Coding部署Coding仓库搭建">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Hexo的坑">
@@ -202,7 +203,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
       <meta itemprop="name" content="亦束">
-      <meta itemprop="description" content="一个月就能精通英语？那我下个月学也无所谓。">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -262,9 +263,10 @@
 <ul>
 <li>注册账号</li>
 <li>创建项目<br>  A 代码托管项目<br>  B 项目名称（用户名）<br>  C 项目标识（用户名.coding.me）</li>
-<li>代码仓库<br>  A 新建代码仓库<br>  B 仓库名称（用户名.coding.me）<br>  C Git仓库<br>  D 启用README.MD文件初始化项目（其余全部默认）<br>  E 代码仓库克隆SSH到站点配置里，同github一样<br>  F 代码仓库设置<br>  G 部署公钥（同github将.ssh里的那个pub文件记事本打开全部复制进来，标题随便，勾全勾上）<br>  H 查询公钥是否成功<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">ssh -T git@coding.net   #*网上说用ssh -T git@git.coding.net是错的*<br></code></pre></td></tr></table></figure>
-  I 推送<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
-
+<li>代码仓库<br>  A 新建代码仓库<br>  B 仓库名称（用户名.coding.me）<br>  C Git仓库<br>  D 启用README.MD文件初始化项目（其余全部默认）<br>  E 代码仓库克隆SSH到站点配置里，同github一样<br>  F 代码仓库设置<br>  G 部署公钥（同github将.ssh里的那个pub文件记事本打开全部复制进来，标题随便，勾全勾上）<br>  H 查询公钥是否成功<pre><code>  ssh -T git@coding.net   #*网上说用ssh -T git@git.coding.net是错的*</code></pre>
+  I 推送<pre><code>  hexo clean
+  hexo g
+  hexo d</code></pre>
 </li>
 </ul>
 <p><font face="思源黑体" color="red" size="5"><strong>Coding网站生产</strong></font></p>
@@ -275,15 +277,47 @@
 </ul>
 <hr>
 <h1 id="NEXT的坑"><a href="#NEXT的坑" class="headerlink" title="NEXT的坑"></a>NEXT的坑</h1><p><font face="思源黑体" color="red" size="5"><strong>动态背景</strong></font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">$ cd &#x2F;themes&#x2F;next  #*进到next文件夹*<br>$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest  #*最新版需要下载*<br>canvas_nest: true  #*需要主动在配置文件添加*<br></code></pre></td></tr></table></figure>
+<pre><code>$ cd /themes/next  #*进到next文件夹*
+$ git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest  #*最新版需要下载*
+canvas_nest: true  #*需要主动在配置文件添加*</code></pre>
 <p>具体官方步骤文档<a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-canvas-nest">canvas_nest</a>,<a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-three">three</a><br><font face="思源黑体" color="red" size="5"><strong>加载动画</strong></font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">$ cd &#x2F;themes&#x2F;next<br>$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace<br>pace: true  #设置为true  #*主题配置文件*<br># Themes list:<br>#pace-theme-big-counter<br>#pace-theme-bounce<br>#pace-theme-barber-shop<br>#pace-theme-center-atom<br>#pace-theme-center-circle<br>#pace-theme-center-radar<br>#pace-theme-center-simple<br>#pace-theme-corner-indicator<br>#pace-theme-fill-left<br>#pace-theme-flash<br>#pace-theme-loading-bar<br>#pace-theme-mac-osx<br>#pace-theme-minimal<br># For example<br># pace_theme: pace-theme-center-simple<br>pace_theme: pace-theme-center-circle #这里任选其中一种<br></code></pre></td></tr></table></figure>
+<pre><code>$ cd /themes/next
+$ git clone https://github.com/theme-next/theme-next-pace source/lib/pace
+pace: true  #设置为true  #*主题配置文件*
+# Themes list:
+#pace-theme-big-counter
+#pace-theme-bounce
+#pace-theme-barber-shop
+#pace-theme-center-atom
+#pace-theme-center-circle
+#pace-theme-center-radar
+#pace-theme-center-simple
+#pace-theme-corner-indicator
+#pace-theme-fill-left
+#pace-theme-flash
+#pace-theme-loading-bar
+#pace-theme-mac-osx
+#pace-theme-minimal
+# For example
+# pace_theme: pace-theme-center-simple
+pace_theme: pace-theme-center-circle #这里任选其中一种</code></pre>
 <p><font face="思源黑体" color="red" size="5"><strong>没有搜索结果</strong></font><br>1.安装插件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">$  npm install hexo-generator-searchdb --save<br>或者<br>$ cnpm install hexo-generator-searchdb --save<br></code></pre></td></tr></table></figure>
+<pre><code>$  npm install hexo-generator-searchdb --save
+或者
+$ cnpm install hexo-generator-searchdb --save</code></pre>
 <p>2.站点配置文件添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">#表示站内搜索<br>search:  <br>    path: search.xml<br>    field: post<br>    format: html<br>    limit: 10000<br></code></pre></td></tr></table></figure>
+<pre><code>#表示站内搜索
+search:  
+    path: search.xml
+    field: post
+    format: html
+    limit: 10000</code></pre>
 <p>3.主题配置文件设置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">local_search:<br>  enable: true  #设置为true<br>  trigger: auto  # auto &#x2F;  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索<br>  top_n_per_article: 1<br>  unescape: true<br></code></pre></td></tr></table></figure>
+<pre><code>local_search:
+  enable: true  #设置为true
+  trigger: auto  # auto /  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索
+  top_n_per_article: 1
+  unescape: true</code></pre>
 <hr>
 <h1 id="HEXO文章添加本地图片"><a href="#HEXO文章添加本地图片" class="headerlink" title="HEXO文章添加本地图片"></a>HEXO文章添加本地图片</h1><ul>
 <li>修改主页配置文件_config.yml中的post_asset_folder这个选项的值为true</li>
@@ -445,7 +479,7 @@
     <img class="site-author-image" itemprop="image" alt="亦束"
       src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">亦束</p>
-  <div class="site-description" itemprop="description">一个月就能精通英语？那我下个月学也无所谓。</div>
+  <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -489,7 +523,72 @@
         </li>
     </ul>
   </div>
+<!-- none-select-br -->
 
+<p></p>
+
+<!-- hitokoto -->
+
+<div class="hitokoto-title">
+  <i class="fa fa-paragraph"></i>
+  <b>一言</b>
+</div>
+
+<p><span id="lwlhitokoto"><script>
+    var binft = function (r) {
+        function t() {
+        return b[Math.floor(Math.random() * b.length)]
+        }  
+        function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+          var l = document.createElement("span");
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+        }
+        function i() {
+            //var t = o[c.skillI];
+            var t = v_yiYan;
+            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+        o = ["青青陵上柏，磊磊涧中石。", "人生天地间，忽如远行客。","斗酒相娱乐，聊厚不为薄。", "驱车策驽马，游戏宛与洛。","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
+            return r + ""
+        }),
+        a = 2,
+        g = 1,
+        s = 5,
+        d = 75,
+        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+        c = {
+            text: "",
+            prefixP: -s,
+            skillI: 0,
+            skillP: 0,
+            direction: "forward",
+            delay: a,
+            step: g
+        };      
+        //YPN Add 2019-03-29 请求获得从7种分类中随机抽取一个句子，并以纯文本格式输出：https://v1.hitokoto.cn/?encode=text
+        //https://v1.hitokoto.cn/（从7种分类中随机抽取）
+        //https://v1.hitokoto.cn/?c=b （请求获得一个分类是漫画的句子）
+        //https://v1.hitokoto.cn/?c=f&encode=text （请求获得一个来自网络的句子，并以纯文本格式输出）
+        var v_yiYan = "让我安静一会儿";
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                v_yiYan = xhr.responseText;
+            }
+        }
+        xhr.open("GET", "https://v1.hitokoto.cn/?encode=text",true);
+        xhr.send();
+        i()
+    };
+    binft(document.getElementById('lwlhitokoto'));
+</script></span></p>
       </div>
 
     </div>

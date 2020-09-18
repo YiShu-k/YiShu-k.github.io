@@ -25,6 +25,7 @@
     var CONFIG = {"hostname":"coding-pages-bucket-3473207-7944240-256-306307-1303119604.cos-website.ap-hongkong.myqcloud.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
+
   <meta name="description" content="目录 他们是时长两年半的练习生好！很有精神！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小林子与骚骚之间不能说的秘密">
@@ -203,7 +204,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
       <meta itemprop="name" content="亦束">
-      <meta itemprop="description" content="一个月就能精通英语？那我下个月学也无所谓。">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -263,18 +264,42 @@
 <hr>
 <p><strong>上传到github的文件变少了</strong><br><em>我备份了public文件夹，上传时.deploy_git会自动拷贝public文件夹并上传自gitbub</em></p>
 <hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">每次发布文章需要<br>hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
-
+<pre><code>   每次发布文章需要
+   hexo clean
+   hexo g
+   hexo d</code></pre>
 <hr>
 <h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1><hr>
 <h3 id="必要软件"><a href="#必要软件" class="headerlink" title="必要软件"></a>必要软件</h3><p>GIT与Node.js<br><em>安装后在输入以下指令</em>  #Git Bush输入检查版本号</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">git --version<br>node -v<br>npm -v<br></code></pre></td></tr></table></figure>
-<h3 id="HEXO框架"><a href="#HEXO框架" class="headerlink" title="HEXO框架"></a>HEXO框架</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;  #taobao镜像<br>npm install -g hexo-cli   #hexo安装<br>hexo -v   #检查版本号<br>hexo init   #初始化博客，不想麻烦可以直接在想要存放的文件夹中直接Git Bush输入指令就行<br>npm install  #必要组件安装<br>hexo g  #编译静态页面<br>hexo s  #启用本地服务器<br>git config --global user.name "your github name"<br>git config --global user.email "your github email"<br>git config user.name  #检查名字<br>git config user.email  #检查邮件<br>ssh-keygen -t rsa -C "your github email"  #记得要不停的敲回车直到代码写完，生成C:\Users\管理员\.ssh\id_rsa.pub，记事本打开全复制到github Deploy keys的key里，勾上下面的勾，添加<br>ssh -T git@github.com  #检查秘钥是否生效<br>npm install hexo-deployer-git --save  #安装部署插件<br>hexo d  #部署<br></code></pre></td></tr></table></figure>
+<pre><code>git --version
+node -v
+npm -v</code></pre>
+<h3 id="HEXO框架"><a href="#HEXO框架" class="headerlink" title="HEXO框架"></a>HEXO框架</h3><pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org/  #taobao镜像
+npm install -g hexo-cli   #hexo安装
+hexo -v   #检查版本号
+hexo init   #初始化博客，不想麻烦可以直接在想要存放的文件夹中直接Git Bush输入指令就行
+npm install  #必要组件安装
+hexo g  #编译静态页面
+hexo s  #启用本地服务器
+git config --global user.name &quot;your github name&quot;
+git config --global user.email &quot;your github email&quot;
+git config user.name  #检查名字
+git config user.email  #检查邮件
+ssh-keygen -t rsa -C &quot;your github email&quot;  #记得要不停的敲回车直到代码写完，生成C:\Users\管理员\.ssh\id_rsa.pub，记事本打开全复制到github Deploy keys的key里，勾上下面的勾，添加
+ssh -T git@github.com  #检查秘钥是否生效
+npm install hexo-deployer-git --save  #安装部署插件
+hexo d  #部署</code></pre>
 <h3 id="GITHUB"><a href="#GITHUB" class="headerlink" title="GITHUB"></a>GITHUB</h3><ul>
 <li>注册</li>
 <li>创建仓库</li>
 <li>仓库名必须是 github用户名.github.io</li>
-<li>在code里HTTPS 转成 SSH秘钥写入博客配置站里<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre class=" language-hljs plain"><code class="language-hljs plain">deploy:<br>  type: git<br>  repo:<br>    github: SSH秘钥<br>    其它站:其它站秘钥<br>  branch: master<br></code></pre></td></tr></table></figure></li>
+<li>在code里HTTPS 转成 SSH秘钥写入博客配置站里<pre><code>deploy:
+type: git
+repo:
+  github: SSH秘钥
+  其它站:其它站秘钥
+branch: master</code></pre>
+</li>
 <li>仓库settings</li>
 <li>deploy keys</li>
 <li>add depoly key<br>a Title随便写<br>b Key上面有说明放入啥</li>
@@ -435,7 +460,7 @@
     <img class="site-author-image" itemprop="image" alt="亦束"
       src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">亦束</p>
-  <div class="site-description" itemprop="description">一个月就能精通英语？那我下个月学也无所谓。</div>
+  <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -479,7 +504,72 @@
         </li>
     </ul>
   </div>
+<!-- none-select-br -->
 
+<p></p>
+
+<!-- hitokoto -->
+
+<div class="hitokoto-title">
+  <i class="fa fa-paragraph"></i>
+  <b>一言</b>
+</div>
+
+<p><span id="lwlhitokoto"><script>
+    var binft = function (r) {
+        function t() {
+        return b[Math.floor(Math.random() * b.length)]
+        }  
+        function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+          var l = document.createElement("span");
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+        }
+        function i() {
+            //var t = o[c.skillI];
+            var t = v_yiYan;
+            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+        o = ["青青陵上柏，磊磊涧中石。", "人生天地间，忽如远行客。","斗酒相娱乐，聊厚不为薄。", "驱车策驽马，游戏宛与洛。","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
+            return r + ""
+        }),
+        a = 2,
+        g = 1,
+        s = 5,
+        d = 75,
+        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+        c = {
+            text: "",
+            prefixP: -s,
+            skillI: 0,
+            skillP: 0,
+            direction: "forward",
+            delay: a,
+            step: g
+        };      
+        //YPN Add 2019-03-29 请求获得从7种分类中随机抽取一个句子，并以纯文本格式输出：https://v1.hitokoto.cn/?encode=text
+        //https://v1.hitokoto.cn/（从7种分类中随机抽取）
+        //https://v1.hitokoto.cn/?c=b （请求获得一个分类是漫画的句子）
+        //https://v1.hitokoto.cn/?c=f&encode=text （请求获得一个来自网络的句子，并以纯文本格式输出）
+        var v_yiYan = "让我安静一会儿";
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                v_yiYan = xhr.responseText;
+            }
+        }
+        xhr.open("GET", "https://v1.hitokoto.cn/?encode=text",true);
+        xhr.send();
+        i()
+    };
+    binft(document.getElementById('lwlhitokoto'));
+</script></span></p>
       </div>
 
     </div>
