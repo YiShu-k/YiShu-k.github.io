@@ -21,6 +21,128 @@
       </tags>
   </entry>
   <entry>
+    <title>互相依存与贸易</title>
+    <url>/2020/09/25/%E4%BA%92%E7%9B%B8%E4%BE%9D%E5%AD%98%E4%B8%8E%E8%B4%B8%E6%98%93/</url>
+    <content><![CDATA[<h3 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a>案例分析</h3><p>假设Frank和Rose每人每天工作8小时，并可以把这个时间用于种土豆、养牛或两者的组合上。下表明每个人生产1盎司每种物品</p>
+<a id="more"></a>
+
+<table>
+<thead>
+<tr>
+<th align="center">YS</th>
+<th align="center">牛肉（分钟/盎司）</th>
+<th align="center">土豆（分钟/盎司）</th>
+<th align="center">牛肉（盎司/8h）</th>
+<th align="center">土豆（盎司/8h）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Frank</td>
+<td align="center">60</td>
+<td align="center">15</td>
+<td align="center">8</td>
+<td align="center">32</td>
+</tr>
+<tr>
+<td align="center">Rose</td>
+<td align="center">20</td>
+<td align="center">10</td>
+<td align="center">24</td>
+<td align="center">48</td>
+</tr>
+</tbody></table>
+<p><img src="/2020/09/25/%E4%BA%92%E7%9B%B8%E4%BE%9D%E5%AD%98%E4%B8%8E%E8%B4%B8%E6%98%93/a.png" alt="a"></p>
+<p>在前面的边界模型中，曲线是外凸的，因为他是两批各自有擅长生产的人员。而这里是一个人的技术可以使他以一种不变的比率在两物品转换，因此生产可能性边界是一条直线。在没有外贸的情况下上图代表了所有可能的情况，假设他们偏好如图中A、B点那样进行生产，让他们进行贸易便得到图3-2abc的结果。<br><img src="/2020/09/25/%E4%BA%92%E7%9B%B8%E4%BE%9D%E5%AD%98%E4%B8%8E%E8%B4%B8%E6%98%93/b.png" alt="b"></p>
+<table>
+<thead>
+<tr>
+<th align="center">YS</th>
+<th align="center">牛肉（Frank）</th>
+<th align="center">土豆（Frank）</th>
+<th align="center">牛肉（Rose）</th>
+<th align="center">土豆（Rose）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">生产与消费（无贸易）</td>
+<td align="center">4</td>
+<td align="center">16</td>
+<td align="center">12</td>
+<td align="center">24</td>
+</tr>
+<tr>
+<td align="center">生产（贸易）</td>
+<td align="center">0</td>
+<td align="center">32</td>
+<td align="center">18</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">贸易</td>
+<td align="center">得到5</td>
+<td align="center">给出15</td>
+<td align="center">给出5</td>
+<td align="center">得到15</td>
+</tr>
+<tr>
+<td align="center">消费（贸易）</td>
+<td align="center">5</td>
+<td align="center">17</td>
+<td align="center">13</td>
+<td align="center">27</td>
+</tr>
+<tr>
+<td align="center">消费增加（贸易好处）</td>
+<td align="center">+1</td>
+<td align="center">+1</td>
+<td align="center">+1</td>
+<td align="center">+3</td>
+</tr>
+</tbody></table>
+<p>Rose无论在生产土豆还是生产牛肉上都有绝对优势，因为她生产1单位这两种物品需要的时间都少于FrankoRose生产1盎司牛肉只需要20分钟，而Frank需要60分钟。同样，Rose生产1盎司土豆只需要10分钟，而Frank需要15分钟。根据这一信息，我们可以得出结论，如果我们用投人量来衡量成本，则Rose生产土豆的成本较低。</p>
+<hr>
+<p>Rose的机会成本，根据第一个表中，1盎司土豆=10（分钟）/20（分钟）*1盎司牛肉=1/2盎司牛肉<br>Frank的机会成本，1盎司土豆=15（分钟）/60（分钟）*1盎司牛肉=1/4盎司牛肉</p>
+<table>
+<thead>
+<tr>
+<th align="center">YS</th>
+<th align="center">1盎司牛肉的机会成本</th>
+<th align="center">1盎司土豆的机会成本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Frank</td>
+<td align="center">4盎司土豆</td>
+<td align="center">1/4盎司牛肉</td>
+</tr>
+<tr>
+<td align="center">Rose</td>
+<td align="center">2盎司土豆</td>
+<td align="center">1/2盎司牛肉</td>
+</tr>
+</tbody></table>
+<p>Frank生产土豆的机会成本低于Rose：1/4盎司牛肉（Frank生产1盎司土豆的成本）&lt;1/2盎司牛肉（Rose生产1盎司土豆的成本）<br>Rose生产牛肉的机会成本低于Frank：4盎司土豆（Frank生产1盎司牛肉的成本）&gt;2盎司牛肉（Rose生产1盎司牛肉的成本）<br>因此，Frank在种植土豆上有比较优势，而Rose在生产牛肉上有比较优势。<br>专业化和贸易的好处不是基于绝对优势，而是基于比较优势。当每个人专门生产自己有比较优势的物品时，经济的总产量就增加了，经济蛋糕的变大可用于改善每个人的状况。<br>进行贸易：（Frank贸易的成本）1盎司牛肉=15/5=3盎司土豆&lt;4盎司土豆（1盎司牛肉的机会成本）<strong>赚</strong><br>（Rose贸易的成本）1盎司土豆=5/15=1/3盎司牛肉&lt;1/2盎司牛肉（1盎司土豆的机会成本）<strong>赚</strong></p>
+<hr>
+<h3 id="贸易的价格"><a href="#贸易的价格" class="headerlink" title="贸易的价格"></a>贸易的价格</h3><p>如果牛肉的价格低于2盎司土豆，Frank和Rose都想买牛肉，因为价格低于他们每个人的机会成本。同样，如果牛肉的价格高于4盎司土豆，他们双方都想卖出牛肉，因为价格高于他们的机会成本。但这是一个只有两个人的经济。他们不能都是牛肉的买方，也不能都是牛肉的卖方。必须有一个人充当交易的另一方，互相有利的贸易在2到4之间。</p>
+<hr>
+<h3 id="比较优势的应用"><a href="#比较优势的应用" class="headerlink" title="比较优势的应用"></a>比较优势的应用</h3><p>Brady能用2个小时修剪完草坪。在这同样的2小时中，他能拍一部电视商业广告片，并赚到2万美元。与此相比，邻居的孩子ForrestGump能用4个小时修剪完Brady家的草坪。在这同样的4个小时中，他可以在麦当劳店工作并赚到40美元。在这个例子中，Brady在修剪草坪上有绝对优势，因为他可以用更少的时间投人完成这项工作。但由于Brady修剪草坪的机会成本是2万美元，而Forrest的机会成本仅为40美元，因此Forrest在修剪草坪上有比较优势。在这个例子中，贸易的好处是巨大的。Brady不应该自己修剪草坪，而应该去拍商业广告片，并雇用Forrest修剪草坪。只要他支付给Forrest的钱多于40美元而少于2万美元，双方的状况就都会变得更好。</p>
+<hr>
+<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><ul>
+<li>绝对优势：一个生产者用比另一个生产者更少的投入生产某种物品的能力。</li>
+<li>比较优势：一个生产者以低于另一个生产者的机会成本生产某种物品的能力。</li>
+</ul>
+<blockquote>
+<p>曼昆《经济学原理》</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>经济学</category>
+      </categories>
+      <tags>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>科学的经济学家</title>
     <url>/2020/09/21/%E4%BD%9C%E4%B8%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6/</url>
     <content><![CDATA[<h3 id="科学方法：观察、理论和进一步观察"><a href="#科学方法：观察、理论和进一步观察" class="headerlink" title="科学方法：观察、理论和进一步观察"></a>科学方法：观察、理论和进一步观察</h3><p><strong>◆主题</strong><br>经济学家如何研究问题<br><strong>◆内容</strong><br>一位经济学家若生活在价格正在迅速上升的国家中，就可能会受到这种观察的刺激而提出一种通货膨胀理论。这种理论可能会断言，当政府发行了过多货币时，高通货膨胀就发生了。为了检验这种理论，这位经济学家可以收集并分析许多不同国家价格和货币量的数据。如果货币量增长完全与价格上升的速度无关，这位经济学家就会开始怀疑自己的通货膨胀理论的正确性。如果全球数据的检验结果表明货币量增长与通货膨胀密切相关（事实的确如此），这位经济学家就会更加相信自己的理论。<br><strong>◆要点</strong><br>经济学家同心理学一样需要靠历史来提供实验</p>
@@ -267,9 +389,6 @@ branch: master</code></pre>
 <h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><p><strong>我们的需求来自一个假设的例子，但再现实中利用这些来确定一个变量影响另一个变量是比较困难的。一个是忽略的变量，比如Emma买书与价格收入，可能因为看电影类似其它变量。另一个是反向因果关系，我们可能认为A引起B，实际是B引起A，家里先买了婴儿车因为孩子要出生，得出来的结论因为婴儿车销量大增引起人口增加很明显是反向因果。这两点在你现实做分析的时候一定要考虑进去。</strong></p>
 <blockquote>
 <p>曼昆《经济学原理》</p>
-<blockquote>
-<p>十大经济基础原理</p>
-</blockquote>
 </blockquote>
 ]]></content>
       <categories>
