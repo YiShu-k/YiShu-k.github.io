@@ -193,6 +193,98 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yishu-k.github.io/2020/12/13/%E5%86%99%E5%9C%A8%E7%8E%B0%E5%9C%A8%E6%97%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="亦束">
+      <meta itemprop="description" content="I have no responsibility to be like they expect me to be.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="亦束">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/13/%E5%86%99%E5%9C%A8%E7%8E%B0%E5%9C%A8%E6%97%B6/" class="post-title-link" itemprop="url">写在现在时</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-13 00:21:10 / 修改时间：00:52:29" itemprop="dateCreated datePublished" datetime="2020-12-13T00:21:10+08:00">2020-12-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/12/13/%E5%86%99%E5%9C%A8%E7%8E%B0%E5%9C%A8%E6%97%B6/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/12/13/%E5%86%99%E5%9C%A8%E7%8E%B0%E5%9C%A8%E6%97%B6/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="搬家"><a href="#搬家" class="headerlink" title="搬家"></a>搬家</h1><p>上周六我从福田搬出来了，今年长租公寓的暴雷，关内的浮躁，嘈杂终于迫使我离开。自从今年疫情以来，我的心态情绪一直有很大的问题，每天疑神疑鬼，压力巨大，好笑的是我并不知道压力来自哪儿，但就是压力大。不过现在我是发现了，我并不能很好的释放自身的情绪。<br><img src="/2020/12/13/%E5%86%99%E5%9C%A8%E7%8E%B0%E5%9C%A8%E6%97%B6/a.png" alt="a"><br>这是现在住的地方，一周的时间把该买的家私都差不多买了，养了些小植物，希望能释放一些情绪吧。</p>
+<h1 id="焦虑"><a href="#焦虑" class="headerlink" title="焦虑"></a>焦虑</h1><p>以前项目组的朋友都买房了，一个在长沙一个在广州，买了一套两百万的房，导致我焦虑感越来越重了。现在混得最差的就是我了吧，我还是一个待在一线城市的人，赚的钱完全比不过他们。跟别人说的很好，啥都考虑过，也有很好的打算，其实只有我自己知道这一切目前都还是虚的，看不见摸不着。</p>
+<h1 id="记录一个ssr的问题"><a href="#记录一个ssr的问题" class="headerlink" title="记录一个ssr的问题"></a>记录一个ssr的问题</h1><p>SSR报错说端口被占用，以下解决方案。<br>输入<code>netsh interface ipv4 show excludedportrange protocol=tcp</code></p>
+<pre><code>协议 tcp 端口排除范围
+开始端口     结束端口
+-------     -------
+    1024        1123
+    1125        1150
+    ....        ....
+* - 管理的窗口排除。</code></pre>
+<p>根据开始端口和结束端口查出没有被占用的端口，比如1024——1123  1125——1150里面1124没有被占用。<br>然后在gui-config.json里修改，同时修改gui-config.json.backup文件<br><code>&quot;loacalport&quot;:1080,</code><br>换成上面没有被占用的端口1124.<br><code>&quot;loacalport&quot;:1124,</code><br>保存后重启SSR就可以了。<br>另外志愿者维护的SSR托管地址：<br><a target="_blank" rel="noopener" href="https://github.com/shadowsocksrr/shadowsocksr-android/releases">SSR安卓</a><br><a target="_blank" rel="noopener" href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases">SSR PC</a><br><a target="_blank" rel="noopener" href="https://tlanyan.me/download.php?filename=/ssr/macos/ShadowsocksX-NG-R8.dmg">SSR MAC</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://yishu-k.github.io/2020/11/09/%E4%BB%A5%E5%90%8E%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E9%98%BF%E9%87%8C%E7%9A%84%E7%AD%96%E7%95%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -218,7 +310,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-11-09 20:33:37 / 修改时间：21:20:51" itemprop="dateCreated datePublished" datetime="2020-11-09T20:33:37+08:00">2020-11-09</time>
+              <time title="创建时间：2020-11-09 20:33:37 / 修改时间：21:22:38" itemprop="dateCreated datePublished" datetime="2020-11-09T20:33:37+08:00">2020-11-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1005,95 +1097,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yishu-k.github.io/2020/09/21/%E4%BD%9C%E4%B8%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="亦束">
-      <meta itemprop="description" content="I have no responsibility to be like they expect me to be.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="亦束">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/21/%E4%BD%9C%E4%B8%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6/" class="post-title-link" itemprop="url">科学的经济学家</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-09-21 20:27:06 / 修改时间：21:05:04" itemprop="dateCreated datePublished" datetime="2020-09-21T20:27:06+08:00">2020-09-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">经济学</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/09/21/%E4%BD%9C%E4%B8%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/09/21/%E4%BD%9C%E4%B8%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="科学方法：观察、理论和进一步观察"><a href="#科学方法：观察、理论和进一步观察" class="headerlink" title="科学方法：观察、理论和进一步观察"></a>科学方法：观察、理论和进一步观察</h3><p><strong>◆主题</strong><br>经济学家如何研究问题<br><strong>◆内容</strong><br>一位经济学家若生活在价格正在迅速上升的国家中，就可能会受到这种观察的刺激而提出一种通货膨胀理论。这种理论可能会断言，当政府发行了过多货币时，高通货膨胀就发生了。为了检验这种理论，这位经济学家可以收集并分析许多不同国家价格和货币量的数据。如果货币量增长完全与价格上升的速度无关，这位经济学家就会开始怀疑自己的通货膨胀理论的正确性。如果全球数据的检验结果表明货币量增长与通货膨胀密切相关（事实的确如此），这位经济学家就会更加相信自己的理论。<br><strong>◆要点</strong><br>经济学家同心理学一样需要靠历史来提供实验</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/21/%E4%BD%9C%E4%B8%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1165,14 +1168,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
