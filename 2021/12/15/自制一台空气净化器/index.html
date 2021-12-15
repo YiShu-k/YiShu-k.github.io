@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/yishu.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/yishu.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/yishu.jpg">
+  <link rel="mask-icon" href="/images/yishu.jpg" color="#222">
+  <link rel="manifest" href="/images/yishu.jpg">
+
+<script data-ad-client="ca-pub-8021667232464034" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source Han Serif:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-big-counter.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yishu-k.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+
+  <meta name="description" content="来到西安，发现雾霾好大，经常都会有雾霾天气，于是就想弄个空气净化器，但是买一个又很贵，不如做一个吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自制一台空气净化器">
+<meta property="og:url" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/index.html">
+<meta property="og:site_name" content="亦束">
+<meta property="og:description" content="来到西安，发现雾霾好大，经常都会有雾霾天气，于是就想弄个空气净化器，但是买一个又很贵，不如做一个吧！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/a.jpg">
+<meta property="og:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/b.jpg">
+<meta property="og:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/c.jpg">
+<meta property="og:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/d.jpg">
+<meta property="og:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/e.jpg">
+<meta property="og:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/f.jpg">
+<meta property="og:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/g.jpg">
+<meta property="og:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/h.jpg">
+<meta property="article:published_time" content="2021-12-15T12:39:38.000Z">
+<meta property="article:modified_time" content="2021-12-15T13:05:03.083Z">
+<meta property="article:author" content="亦束">
+<meta property="article:tag" content="DIY">
+<meta property="article:tag" content="空气净化器">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/a.jpg">
+
+<link rel="canonical" href="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>自制一台空气净化器 | 亦束</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <a target="_blank" rel="noopener" href="https://github.com/YiShu-k" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">亦束</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">理解世界的最高境界是欢笑和广博的同情心</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="亦束">
+      <meta itemprop="description" content="I have no responsibility to be like they expect me to be.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="亦束">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          自制一台空气净化器
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-12-15 20:39:38 / 修改时间：21:05:03" itemprop="dateCreated datePublished" datetime="2021-12-15T20:39:38+08:00">2021-12-15</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/DIY/" itemprop="url" rel="index"><span itemprop="name">DIY</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>来到西安，发现雾霾好大，经常都会有雾霾天气，于是就想弄个空气净化器，但是买一个又很贵，不如做一个吧！<a id="more"></a></p>
+<h1 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h1><p><img src="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/a.jpg" alt="a"><br>配件：<br>机箱散热风扇（NIDEC B35502-35）<code>120*120*38、12V、1.4A、16.8W、4000RPM、160CFM、0.883in H2O、56.5DBA、超耐用双滚珠轴承</code><br>滤网：思博润适用飞利浦空气净化器过滤网滤芯 AC4025 4127<br>调速电源、静电棉、纸箱子<br>工具：<br>胶带、美术刀。</p>
+<hr>
+<h1 id="制作过程"><a href="#制作过程" class="headerlink" title="制作过程"></a>制作过程</h1><p>箱子挖一个出风口，如图。风扇出风对着外面。<img src="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/b.jpg" alt="b">里面想办法把风扇固定住。虽然我这里用了胶带，但是风力太大给吹开了，后来开了两个洞，给风扇绑了两根绳子。然后在其它角上放纸板做的柱子，和风扇一样高，让滤网刚好搭在上面。<img src="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/c.jpg" alt="c">先放下HEPA滤网。<img src="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/d.jpg" alt="d">然后把静电棉粘在活性炭网上，放进纸箱子。<img src="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/e.jpg" alt="e">为了防止其它方向漏风，我全部用胶带胶了一遍，尽量保持更好的气密性。然后就完成了<img src="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/f.jpg" alt="f"></p>
+<hr>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>低档<img src="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/g.jpg" alt="g"><br>高档<img src="/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/h.jpg" alt="h"></p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>成本：一共一百多块，风扇+电源45，滤网89.<br>效果：只有主观效果，没钱买空气检测仪，在十几平的卧室里（关门窗），大概半小时能有一个舒服的空气。去客厅，在回到卧室能有明显的感受。当然与商用机器没法比，咱也没买过，就图一乐。有钱还是建议买市场上的机器就行。<br>非原创，在知乎上看到过原理，照着这个原理做的。我这个风扇也一般般，换个风量更大的，估计效果更好，就是噪音嘛就不好说了。</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>一分一毛都是爱，喜欢的打赏哦，你的支持是我前进的动力.</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpg" alt="亦束 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>亦束
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://yishu-k.github.io/2021/12/15/%E8%87%AA%E5%88%B6%E4%B8%80%E5%8F%B0%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/" title="自制一台空气净化器">https://yishu-k.github.io/2021/12/15/自制一台空气净化器/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fa fa-wechat"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/DIY/" rel="tag">YS DIY</a>
+              <a href="/tags/%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8/" rel="tag">YS 空气净化器</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/12/14/%E8%AE%A1%E5%88%92%E8%B0%83%E6%95%B4/" rel="prev" title="计划调整">
+      <i class="fa fa-chevron-left"></i> 计划调整
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9D%90%E6%96%99"><span class="nav-number">1.</span> <span class="nav-text">材料</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%B6%E4%BD%9C%E8%BF%87%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">制作过程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95"><span class="nav-number">3.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="亦束"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">亦束</p>
+  <div class="site-description" itemprop="description">I have no responsibility to be like they expect me to be.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://xydh.fun/YiShu" title="https:&#x2F;&#x2F;xydh.fun&#x2F;YiShu" rel="noopener" target="_blank">亦束导航</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://space.bilibili.com/17617970" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;17617970" rel="noopener" target="_blank">我的B站</a>
+        </li>
+    </ul>
+  </div>
+<!-- none-select-br -->
+
+<p></p>
+
+<!-- hitokoto -->
+
+<div class="hitokoto-title">
+  <i class="fa fa-paragraph"></i>
+  <b>一言</b>
+</div>
+
+<p><span id="lwlhitokoto"><script>
+    var binft = function (r) {
+        function t() {
+        return b[Math.floor(Math.random() * b.length)]
+        }  
+        function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+          var l = document.createElement("span");
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+        }
+        function i() {
+            //var t = o[c.skillI];
+            var t = v_yiYan;
+            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+        o = ["青青陵上柏，磊磊涧中石。", "人生天地间，忽如远行客。","斗酒相娱乐，聊厚不为薄。", "驱车策驽马，游戏宛与洛。","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
+            return r + ""
+        }),
+        a = 2,
+        g = 1,
+        s = 5,
+        d = 75,
+        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+        c = {
+            text: "",
+            prefixP: -s,
+            skillI: 0,
+            skillP: 0,
+            direction: "forward",
+            delay: a,
+            step: g
+        };      
+        //YPN Add 2019-03-29 请求获得从7种分类中随机抽取一个句子，并以纯文本格式输出：https://v1.hitokoto.cn/?encode=text
+        //https://v1.hitokoto.cn/（从7种分类中随机抽取）
+        //https://v1.hitokoto.cn/?c=b （请求获得一个分类是漫画的句子）
+        //https://v1.hitokoto.cn/?c=f&encode=text （请求获得一个来自网络的句子，并以纯文本格式输出）
+        var v_yiYan = "让我安静一会儿";
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                v_yiYan = xhr.responseText;
+            }
+        }
+        xhr.open("GET", "https://v1.hitokoto.cn/?encode=text",true);
+        xhr.send();
+        i()
+    };
+    binft(document.getElementById('lwlhitokoto'));
+</script></span></p>
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">©2020 by 亦束</span>
+</div>
+
+<!---->
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f5754ebeba4bead" async="async"></script>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '3wV7WL6BCktqlBJszaynaSBs-gzGzoHsz',
+      appKey     : 'HjWU8NYnQxN2n3KG50AIQ1iC',
+      placeholder: "Just go go",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+</html>
